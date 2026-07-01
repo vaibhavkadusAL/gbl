@@ -1,0 +1,234 @@
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  background: transparent;
+  transition: all 0.35s ease;
+  z-index: 999;
+}
+
+.navbar.scrolled {
+  background: #fff;
+  padding: 15px 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+
+.logo img {
+  height: 48px;
+  display: block;
+}
+
+/* Navigation */
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2e7d32;
+}
+
+/* Button */
+
+.talk-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border: none;
+  cursor: pointer;
+
+  padding: 15px 28px;
+  border-radius: 50px;
+
+  background: linear-gradient(90deg, #1b5e20, #2e7d32);
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.talk-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Mobile Menu Button */
+
+.menu-btn {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #222;
+  z-index: 1002;
+}
+
+/* Overlay */
+
+.nav-overlay {
+  display: none;
+}
+
+/* ===========================
+   Laptop
+=========================== */
+
+@media (max-width: 1200px) {
+  .nav-links {
+    gap: 22px;
+  }
+
+  .talk-btn {
+    padding: 14px 22px;
+    font-size: 15px;
+  }
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width: 992px) {
+  .menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .talk-btn {
+    display: none;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    max-width: 80%;
+    height: 100vh;
+
+    background: #fff;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 120px 35px;
+
+    transition: 0.35s ease;
+
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
+
+    z-index: 1001;
+  }
+
+  .nav.active {
+    right: 0;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .nav-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1000;
+  }
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 768px) {
+  .container {
+    width: 92%;
+  }
+
+  .logo img {
+    height: 42px;
+  }
+
+  .nav {
+    width: 280px;
+  }
+}
+
+/* ===========================
+   Small Mobile
+=========================== */
+
+@media (max-width: 480px) {
+  .container {
+    width: 94%;
+  }
+
+  .logo img {
+    height: 36px;
+  }
+
+  .menu-btn {
+    font-size: 28px;
+  }
+
+  .nav {
+    width: 100%;
+    max-width: 100%;
+    padding: 100px 25px;
+  }
+
+  .nav-links a {
+    font-size: 17px;
+  }
+}
