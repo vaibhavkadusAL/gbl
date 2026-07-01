@@ -1,0 +1,208 @@
+.impact-action{
+    width:100%;
+    padding:80px 6%;
+    display:flex;
+    gap:40px;
+    align-items:center;
+    background:#fff;
+}
+
+/* Left */
+
+.impact-left{
+    width:25%;
+}
+
+.impact-left h2{
+    font-size:34px;
+    color:#222;
+    margin-bottom:12px;
+}
+
+.left-text{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:35px;
+}
+
+.impact-item{
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+    margin-bottom:25px;
+}
+
+.icon-box{
+    width:55px;
+    height:55px;
+    background:#eef8ef;
+    border-radius:14px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#3d9443;
+    font-size:22px;
+    flex-shrink:0;
+}
+
+.impact-item h3{
+    margin-bottom:5px;
+    color:#2e7d32;
+    font-size:22px;
+}
+
+.impact-item p{
+    color:#666;
+    line-height:1.5;
+}
+
+/* Card */
+
+.case-study-card{
+    width:75%;
+    display:flex;
+    gap:35px;
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
+
+.impact-image{
+    width:42%;
+}
+
+.impact-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:15px;
+    display:block;
+}
+
+.impact-right{
+    width:58%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.case-study{
+    color:#4b9d49;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.impact-right h2{
+    margin:15px 0;
+    font-size:30px;
+    color:#222;
+    line-height:1.35;
+}
+
+.impact-right p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.impact-right a{
+    color:#3d9443;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.bottom-area{
+    margin-top:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.dots{
+    display:flex;
+    gap:8px;
+}
+
+.dots span{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#d7d7d7;
+}
+
+.dots .active{
+    background:#3d9443;
+}
+
+.nav-buttons{
+    display:flex;
+    gap:10px;
+}
+
+.nav-buttons button{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    border:1px solid #9ccc9d;
+    background:#fff;
+    color:#3d9443;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.nav-buttons button:hover{
+    background:#3d9443;
+    color:#fff;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.impact-action{
+    flex-direction:column;
+}
+
+.impact-left,
+.case-study-card{
+    width:100%;
+}
+
+.case-study-card{
+    flex-direction:column;
+}
+
+.impact-image,
+.impact-right{
+    width:100%;
+}
+
+.impact-left{
+    text-align:center;
+}
+
+.impact-item{
+    justify-content:center;
+}
+
+.bottom-area{
+    flex-direction:column;
+    gap:20px;
+}
+
+}
+
+@media(max-width:576px){
+
+.impact-left h2,
+.impact-right h2{
+    font-size:26px;
+}
+
+.case-study-card{
+    padding:20px;
+}
+
+}
